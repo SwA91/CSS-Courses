@@ -1,8 +1,8 @@
 @import "tailwindcss";
-/* deshabilitamos el tema dark */
-/* @custom-variant dark (&:where(.dark, .dark *)); */
+/* deshabilitamos el tema dark, pasa el control a nuestras clases */
+@custom-variant dark (&:where(.dark, .dark *));
 @theme {
   /* variables para paletas de colores */
   --color-primary: #f5f8ff;
-  --color-primary-dark: #f25d31;
+  --color-primary-dark: #14161a;
 }
