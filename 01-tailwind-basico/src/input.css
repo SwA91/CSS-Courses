@@ -15,7 +15,11 @@
   animation: rotarDerechaIzquierda 1s ease-in-out infinite;
 }
 
-/* un chorizo de clases lo sacamos en una sola clase */
+/* un chorizo de clases lo sacamos en una sola clase para reutilizarlo */
 .content-main {
   @apply h-screen bg-linear-to-r from-cyan-400 to-blue-500 p-5 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
+}
+
+.font-negrita {
+  @apply font-extrabold;
 }
