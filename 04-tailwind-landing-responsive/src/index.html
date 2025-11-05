@@ -7,32 +7,46 @@
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
     <title>Landing Responsive</title>
   </head>
-  <body class="">
+  <body class="h-screen bg-[#ACF9FA] text-black">
     <!-- CABECERA -->
-    <header>
-      <nav>
-        <div>
-          <a href="">Home</a><a href="">Acerca de</a><a href="">Contacto</a>
+    <header class="fixed top-0 left-0 w-full px-8 md:px-16  p-2">
+      <!-- 
+        .max-w-7xl limitado a un ancho
+        .container es una buena opcion porque el ancho pasa todos los breakpoints
+       -->
+      <nav
+        class="flex justify-between items-center container  m-auto"
+      >
+        <!-- logo empresa -->
+        <a href="" class="font-bold text-xl">TAILWIND</a>
+        <!-- primer las clases para mobile > tablet > desktop -->
+        <div class="hidden md:flex gap-6 text-lg">
+          <a class="hover:text-green-700 cursor-pointer" href="">Home</a>
+          <a class="hover:text-green-700 cursor-pointer" href="">Acerca de</a>
+          <a class="hover:text-green-700 cursor-pointer" href="">Contacto</a>
         </div>
       </nav>
     </header>
 
     <!-- CUERPO -->
-    <main>
-      <section>
+    <main
+      class="flex flex-col md:flex-row justify-center items-center px-8 md:px-16  gap-20  h-full"
+    >
+      <section class="text-center md:text-left">
         <img class="h-50" src="./tailwind.png" alt="" />
-        <h1>Entrenamos?</h1>
-        <p>
+        <h1 class="text-5xl md:text-7xl font-bold my-4">Entrenamos?</h1>
+        <p class="text-lg md:text-xl">
           Tailwind es <br />
           cool!
         </p>
-        <a href="">Entrenar</a>
+        <!-- inline-block ayuda que se ubique bien -->
+        <a href="" class="mt-6 bg-black text-white px-6 py-3 rounded-full hover:shadow-2xl transition cursor-pointer inline-block">Entrenar</a>
       </section>
-      <img class="h-50" src="./img.png" alt="" />
+      <img class="w-20 md:w-60" src="./img.png" alt="" />
     </main>
 
     <!-- PIE PAGINA -->
-    <footer>
+    <foote class="fixed bottom-0 text-center w-full p-2">
       <span>Tailwind Page</span>
       <span>|</span>
       <span>Company</span>
