@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@keyframes rotarDerechaIzquierda {
+  0%,
+  100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+/* Aplicar en una clase el keyframe */
+.animate-card {
+  animation: rotarDerechaIzquierda 1s ease-in-out infinite;
+}
+
+/* un chorizo de clases lo sacamos en una sola clase */
+.content-main {
+  @apply h-screen bg-linear-to-r from-cyan-400 to-blue-500 p-5 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
+}
