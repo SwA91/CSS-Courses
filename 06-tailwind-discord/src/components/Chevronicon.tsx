@@ -5,7 +5,7 @@ interface Props {
 }
 
 export const Chevronicon = ({ expanded }: Props) => {
-  const chevClass = "text-white/80 my-auto mr-1";
+  const chevClass = "text-gray-600 dark:text-white/80 my-auto mr-1";
   return expanded ? (
     <Icon
       icon="mingcute:down-line"

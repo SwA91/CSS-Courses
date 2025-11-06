@@ -21,7 +21,7 @@ export const Dropdown = ({ header, selections }: Props) => {
           className={
             expanded
               ? "text-[#9f9f9f] text-lg font-bold"
-              : " text-gray-500 text-lg font-semibold cursor-default"
+              : " text-gray-500 text-lg font-semibold "
           }
         >
           {header}
@@ -30,7 +30,7 @@ export const Dropdown = ({ header, selections }: Props) => {
           icon="ic:outline-plus"
           width="12"
           height="12"
-          className="text-white/80 my-auto ml-auto"
+          className="text-gray-600 dark:text-white/80 my-auto ml-auto"
         />
       </div>
       {expanded &&
